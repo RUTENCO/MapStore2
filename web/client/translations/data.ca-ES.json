@@ -379,7 +379,7 @@
     },
     "home": {
       "open": "Obrir",
-      "shortDescription": "<h1> Benvingut a MapStore </h1> <p> Webmapping web modern amb OpenLayers,Cesium,Fullet i ReactJs. </p>",
+      "shortDescription": "<h1>Proyecto Alertas Tempranas</h1><p>La Universidad de Antioquia es una institución pública que, mediante la investigación, la docencia y la extensión, se dedica a la creación, preservación y difusión del conocimiento y la cultura. Forma profesionales éticos, críticos y comprometidos con el desarrollo social, promoviendo la equidad, la responsabilidad y el respeto por el entorno.</p>",
       "forkMeOnGitHub": "Fork Me a GitHub",
       "description": "MapStore s'ha desenvolupat per crear,guardar i compartir de manera senzilla i intu\u00eftiva mapes i mashups creats seleccionant continguts procedents de fonts conegudes com OpenStreetMap,Google Maps o de serveis prestats per organitzacions que utilitzen protocols oberts com OGC WMS,WFS,WMTS o TMS,etc.",
       "Applications": "Aplicacions",
@@ -387,6 +387,19 @@
       "LinkedinGroup": "MapStore LinkedIn Group",
       "scrollTop": "Desplaceu -vos fins a la part superior de la p\u00e0gina",
       "footerCustomHTML": "<div> <p> Inseriu html personalitzat a les traduccions per fer un peu de p\u00e0gina personalitzat </p> </div>"
+    },
+    "form": {
+      "title": "Formulario PQRS",
+      "name": "Nombre",
+      "phone": "Teléfono",
+      "description": "Descripción",
+      "submit": "Enviar",
+      "successMessage": "Su PQRS ha sido enviada correctamente.",
+      "errorMessage": "Hubo un error al enviar su PQRS. Por favor, inténtelo de nuevo."
+    },
+    "BrandNavbar": {
+        "description": "Grupo de Investigación en Infraestructura",
+        "title": "Barra de navegación de marca"
     },
     "cookiesPolicyNotification": {
       "title": "Aquest lloc web utilitza cookies",
@@ -3428,7 +3441,7 @@
         "title": "MapViews"
       },
       "BrandNavbar": {
-        "description": "Men\u00fa principal de navegaci\u00f3",
+        "description": "Alcaldía de Marinilla- Antioquia",
         "title": "Brand Navbar"
       },
       "ResourceDetails": {

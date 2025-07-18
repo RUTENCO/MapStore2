@@ -67,6 +67,7 @@ class AutoMapUpdate extends React.Component {
                 unit={this.props.unit}
                 spinner={this.props.spinner}/>
         );
+
     }
 }
 

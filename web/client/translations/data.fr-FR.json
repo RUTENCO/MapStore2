@@ -378,7 +378,7 @@
     },
     "home": {
       "open": "Ouvrir",
-      "shortDescription": "<h1>Bienvenue sur MapStore</h1><p>Cartographie Web moderne avec OpenLayers, Cesium, Leaflet et ReactJS.</p>",
+      "shortDescription": "<h1>Projet d'alerte précoce</h1><p>L'Université d'Antioquia est une institution publique qui, par la recherche, l'enseignement et la vulgarisation, se consacre à la création, à la préservation et à la diffusion des connaissances et de la culture. Elle forme des professionnels éthiques, critiques et engagés dans le développement social, promouvant l’équité, la responsabilité et le respect de l’environnement.</p>",
       "forkMeOnGitHub": "Fork me on GitHub",
       "description": "MapStore a été développé pour créer, sauvegarder et partager de façon simple et intuitive des cartes simple ou élaboréess créés à partir de services comme OpenStreetMap, Google Maps ou tout autres services fournis par des organisations utilisant des protocoles ouverts comme OGC WMS, WFS, WMTS ou TMS et bien d'autres...<br/>Visitez notre <a href=\"https://mapstore.readthedocs.io/en/latest/\">page d'accueil</a> pour plus de détails.",
       "Applications": "Applications",
@@ -387,6 +387,19 @@
       "scrollTop": "Retour en haut de la page",
       "footerCustomHTML": "<div><p>Veuillez insérer du HTML personnalisé dans les traductions pour afficher un pied de page personnalisé</p></div>"
     },
+    "form": {
+      "title": "Formulaire PQRS",
+      "name": "Nom",
+      "phone": "Téléphone",
+      "description": "Description",
+      "submit": "Soumettre",
+      "successMessage": "Votre PQRS a été envoyé avec succès.",
+      "errorMessage": "Une erreur s'est produite lors de l'envoi de votre PQRS. Veuillez réessayer."
+    },
+    "BrandNavbar": {
+        "description": "Groupe de recherche sur les infrastructures",
+        "title": "Barre de navigation de la marque"
+      },
     "cookiesPolicyNotification": {
       "title": "Ce site utilise des cookies",
       "message": "En continuant sur notre site Web, vous acceptez l'utilisation de cookies.",
@@ -3438,7 +3451,7 @@
         "title": "MapViews"
       },
       "BrandNavbar": {
-        "description": "Menu de navigation principal",
+        "description": "Bureau du maire de Marinilla-Antioquia",
         "title": "Barre de navigation de la marque"
       },
       "ResourceDetails": {

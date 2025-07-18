@@ -31,7 +31,7 @@ class Home extends React.Component {
     };
 
     static defaultProps = {
-        icon: "home",
+        icon: "map-marker",
         tooltipPosition: 'left',
         bsStyle: 'primary',
         hidden: false
@@ -49,7 +49,7 @@ class Home extends React.Component {
                     onClick={this.checkUnsavedChanges}
                     tooltip={tooltip}
                     {...pick(restProps, ['disabled', 'active', 'block', 'componentClass', 'href', 'children', 'icon', 'bsStyle', 'className'])}
-                ><Glyphicon glyph={this.props.icon}/></Button>
+                ><Glyphicon glyph={this.props.icon}/></Button> Inicio
             </OverlayTrigger>
         );
     }

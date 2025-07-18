@@ -2,7 +2,10 @@
   "name": "mapstore2",
   "version": "0.11.0",
   "description": "MapStore 2",
-  "repository": "https://github.com/geosolutions-it/MapStore2",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/geosolutions-it/MapStore2.git"
+  },
   "main": "index.js",
   "eslintConfig": {
     "extends": [
@@ -156,6 +159,7 @@
     "b64-to-blob": "1.2.19",
     "babel-polyfill": "6.8.0",
     "babel-standalone": "6.7.7",
+    "body-parser": "^2.2.0",
     "bootstrap": "3.4.1",
     "buffer": "6.0.3",
     "canvas-to-blob": "0.0.0",
@@ -165,6 +169,7 @@
     "codemirror": "5.65.16",
     "concurrently": "6.4.0",
     "connected-react-router": "6.3.2",
+    "cors": "^2.8.5",
     "d3-format": "3.1.0",
     "draft-js": "0.11.0",
     "draft-js-inline-toolbar-plugin": "3.0.1",
@@ -180,6 +185,7 @@
     "es6-promise": "2.3.0",
     "esri-leaflet": "3.0.12",
     "eventlistener": "0.0.1",
+    "express": "^5.1.0",
     "file-saver": "1.3.3",
     "filtrex": "2.1.0",
     "font-awesome": "4.7.0",
@@ -208,9 +214,11 @@
     "lodash": "4.17.21",
     "lrucache": "1.0.3",
     "mapillary-js": "4.1.2",
+    "mapstore2": "file:",
     "md5": "2.3.0",
     "moment": "2.29.4",
     "node-geo-distance": "1.2.0",
+    "nodemailer": "^6.10.1",
     "object-assign": "4.1.1",
     "object-fit-images": "3.2.4",
     "ol": "7.4.0",
@@ -329,5 +337,14 @@
     "json:write": "prettier --ignore-path .prettierignore --write \"./**/*.json\""
   },
   "author": "GeoSolutions",
-  "license": "BSD-2-Clause"
+  "license": "BSD-2-Clause",
+  "bugs": {
+    "url": "https://github.com/geosolutions-it/MapStore2/issues"
+  },
+  "homepage": "https://github.com/geosolutions-it/MapStore2#readme",
+  "directories": {
+    "doc": "docs",
+    "test": "tests"
+  },
+  "keywords": []
 }

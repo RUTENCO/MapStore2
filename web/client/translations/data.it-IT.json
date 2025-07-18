@@ -379,7 +379,7 @@
     },
     "home": {
       "open": "Apri",
-      "shortDescription": "<h1>Benvenuti su MapStore</h1><p>Modern webmapping con OpenLayers, Cesium, Leaflet e ReactJS.</p>",
+      "shortDescription": "<h1>Progetto di allerta precoce</h1><p>L'Università di Antioquia è un'istituzione pubblica che, attraverso la ricerca, l'insegnamento e la divulgazione, si dedica alla creazione, alla conservazione e alla diffusione della conoscenza e della cultura. Forma professionisti etici e critici, impegnati nello sviluppo sociale, promuovendo equità, responsabilità e rispetto per l'ambiente.</p>",
       "forkMeOnGitHub": "Fork me on GitHub",
       "description": "MapStore è sviluppato per creare, salvare e condividere in modo semplice ed intuitivo mappe e mashup creati selezionando contenuti da server come Google Maps, OpenStreetMap, MapQuest o da server specifici forniti dalla propria organizzazione o da terzi. <br/> Visita la <a href=\"https://mapstore.readthedocs.io/en/latest/\">home page</a> per maggiori dettagli.",
       "Applications": "Applicazioni",
@@ -388,6 +388,19 @@
       "scrollTop": "Torna all'inizio della pagina",
       "footerCustomHTML": "<div><p>Per favore, inserisci un HTML custom nelle traduzioni per renderizzare un footer personalizzato</p></div>"
     },
+    "form": {
+      "title": "Modulo PQRS",
+      "name": "Nome",
+      "phone": "Telefono",
+      "description": "Descrizione",
+      "submit": "Invia",
+      "successMessage": "Il tuo PQRS è stato inviato con successo.",
+      "errorMessage": "Si è verificato un errore durante l'invio del PQRS. Riprova."
+    },
+    "BrandNavbar": {
+        "description": "Gruppo di ricerca sulle infrastrutture",
+        "title": "Brand Navbar"
+      },
     "cookiesPolicyNotification": {
       "title": "Questo sito utilizza cookies",
       "message": "Continuando a navigare sul sito acconsenti all'uso dei cookie",
@@ -3440,7 +3453,7 @@
         "title": "MapViews"
       },
       "BrandNavbar": {
-        "description": "Menu di navigazione principale",
+        "description": "Ufficio del Sindaco di Marinilla-Antioquia",
         "title": "Brand Navbar"
       },
       "ResourceDetails": {

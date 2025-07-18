@@ -378,7 +378,7 @@
     },
     "home": {
       "open": "Öffnen",
-      "shortDescription": "<h1>Willkommen bei MapStore</h1><p>Modernes Webmapping mit OpenLayers, Cesium, Leaflet und ReactJS.</p>",
+      "shortDescription": "<h1>Frühwarnprojekt</h1><p>Die Universität von Antioquia ist eine öffentliche Einrichtung, die sich durch Forschung, Lehre und Öffentlichkeitsarbeit der Schaffung, Bewahrung und Verbreitung von Wissen und Kultur widmet. Es bildet ethische, kritische Fachkräfte aus, die sich für soziale Entwicklung einsetzen und Gerechtigkeit, Verantwortung und Respekt für die Umwelt fördern.</p>",
       "forkMeOnGitHub": "Fork me on GitHub",
       "description": "MapStore wurde entwickelt, um auf einfache und intuitive Weise Karten und Mashups zu erstellen, zu speichern und zu teilen die auf Inhalten von bekannten Quellen wie Google Maps und OpenStreetMap oder von Diensten die auf offenen Protokollen wie OGC WMS, WFS, WMTS or TMS und so weiter basieren.<br/>Besuche die <a href=\"https://mapstore.readthedocs.io/en/latest/\">Homepage</a> für mehr Details.",
       "Applications": "Anwendungen",
@@ -425,6 +425,19 @@
         }
       }
     },
+    "form": {
+      "title": "PQRS-Formular",
+      "name": "Name",
+      "phone": "Telefon",
+      "description": "Beschreibung",
+      "submit": "Senden",
+      "successMessage": "Ihre PQRS wurde erfolgreich gesendet.",
+      "errorMessage": "Beim Senden Ihres PQRS ist ein Fehler aufgetreten. Bitte versuchen Sie es erneut."
+    },
+    "BrandNavbar": {
+        "description": "Infrastrukturforschungsgruppe",
+        "title": "Brand Navbar"
+      },
     "cookiesPolicyNotification": {
       "title": "Diese Webseite verwendet Cookies",
       "message": "Wenn Sie unsere Website weiterhin nutzen, akzeptieren Sie die Verwendung von Cookies.",
@@ -3476,7 +3489,7 @@
         "title": "Kartenansichten"
       },
       "BrandNavbar": {
-        "description": "Hauptnavigationsmenü",
+        "description": "Büro des Bürgermeisters von Marinilla-Antioquia",
         "title": "Brand Navbar"
       },
       "ResourceDetails": {

@@ -187,7 +187,7 @@
     },
     "home": {
       "open": "Abrir",
-      "shortDescription": "<h1>Welcome to MapStore</h1><p>Modern webmapping with OpenLayers, Cesium, Leaflet and ReactJS.</p>",
+      "shortDescription": "<h1>Marinilla WebGIS</h1><p>Marinilla, fundada en 1690 y reconocida oficialmente como villa en 1787, se distingue por su legado indígena, su activa participación en la gesta independentista y su riqueza cultural, lo que le ha valido el reconocimiento como 'La Esparta Colombiana'.</p>",
       "forkMeOnGitHub": "Fork me on GitHub",
       "description": "MapStore 2 foi desenvolvido para criar, guardar e partilhar de uma maneira simples e intuitiva mapas e mashups criados seleccionando conteudos de fontes populares como o Google Maps e OpenStreetMap ou de serviços fornecidos por organisações utilizando protocolos livre como OGC WMS, WFS, WMTS ou TMS, etc.<br/>Visite <a href=\"http://geosolutions-it.github.io/MapStore/\">home page</a> para mais detalhes.",
       "Applications": "Aplicações",

@@ -378,7 +378,7 @@
     },
     "home": {
       "open": "Abrir",
-      "shortDescription": "<h1>Bienvenido a MapStore</h1><p>Mapas web modernos con OpenLayers, Cesium, Leaflet y ReactJS.</p>",
+      "shortDescription": "<h1>Proyecto Alertas Tempranas</h1><p>La Universidad de Antioquia es una institución pública que, mediante la investigación, la docencia y la extensión, se dedica a la creación, preservación y difusión del conocimiento y la cultura. Forma profesionales éticos, críticos y comprometidos con el desarrollo social, promoviendo la equidad, la responsabilidad y el respeto por el entorno.</p>",
       "forkMeOnGitHub": "Fork me on GitHub",
       "description": "MapStore está hecho para crear, guardar y compartir de forma simple e intuitiva mapas y composiciones creados a partir de contenidos de servidores tales como OpenStreetMap, Google Maps, MapQuest o  cualquier otro servidor que proporcione protocolos estándar tales como OGC WMS, WFS, WMTS o TMS y otros.<br/>Visite nuestra <a href=\"https://mapstore.readthedocs.io/en/latest/\">página principal</a> para más detalles.",
       "Applications": "Aplicaciones",
@@ -386,6 +386,19 @@
       "LinkedinGroup": "Grupo Linkedin de Mapstore",
       "scrollTop": "Volver al principio de la página",
       "footerCustomHTML": "<div><p>Inserte HTML personalizado en las traducciones para generar un pie de página personalizado.</p></div>"
+    },
+    "form": {
+      "title": "Formulario PQRS",
+      "name": "Nombre",
+      "phone": "Teléfono",
+      "description": "Descripción",
+      "submit": "Enviar",
+      "successMessage": "Su PQRS ha sido enviada correctamente.",
+      "errorMessage": "Hubo un error al enviar su PQRS. Por favor, inténtelo de nuevo."
+    },
+    "BrandNavbar": {
+        "description": "Grupo de Investigación en Infraestructura",
+        "title": "Barra de navegación de marca"
     },
     "cookiesPolicyNotification": {
       "title": "Este sitio usa cookies",
@@ -3437,7 +3450,7 @@
         "title": "Vistas del mapa"
       },
       "BrandNavbar": {
-        "description": "Menú de navegación principal",
+        "description": "Alcaldía de Marinilla- Antioquia",
         "title": "Barra de navegación de marca"
       },
       "ResourceDetails": {

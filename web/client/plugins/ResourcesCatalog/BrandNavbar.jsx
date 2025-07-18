@@ -16,7 +16,8 @@ import tooltip from '../../components/misc/enhancers/tooltip';
 import Spinner from '../../components/layout/Spinner';
 import Icon from './components/Icon';
 import PropTypes from 'prop-types';
-import MenuNavLink from './components/MenuNavLink';
+import Message from '../../components/I18N/Message';
+// import MenuNavLink from './components/MenuNavLink';
 import src from '../../product/assets/img/logo.png';
 
 const ButtonWithTooltip = tooltip(Button);
@@ -151,8 +152,8 @@ function BrandNavbar({
     variant,
     leftMenuItems,
     rightMenuItems,
-    items,
-    logo
+    items
+    // logo
 }, context) {
     const { loadedPlugins } = context;
     const configuredItems = usePluginItems({ items, loadedPlugins });
@@ -160,8 +161,32 @@ function BrandNavbar({
     const pluginRightMenuItems = configuredItems.filter(({ target }) => target === 'right-menu').map(item => ({ ...item, type: 'plugin' }));
     return (
         <>
+            {/* Header adicional con imagen y enlace */}
+            <div
+                style={{
+                    backgroundColor: '#0C5ECA', // Fondo azul
+                    width: '100%',
+                    height: '48px',
+                    padding: '0 60px', // Espaciado interno para mover la imagen hacia el centro
+                    display: 'flex',
+                    alignItems: 'center'
+                }}
+            >
+                <a href="https://www.gov.co/" target="_blank" rel="noopener noreferrer">
+                    <img
+                        src="../../product/assets/img/cov_colombia.png"
+                        alt="Header Image"
+                        style={{
+                            weight: '136px',
+                            height: '24px', // Ajusta la altura de la imagen
+                            objectFit: 'contain'
+                        }}
+                    />
+                </a>
+            </div>
             <FlexBox
                 id="ms-brand-navbar"
+                style={{ fontFamily: 'Montserrat, sans-serif' }}
                 classNames={[
                     'ms-brand-navbar',
                     'ms-main-colors',
@@ -174,11 +199,59 @@ function BrandNavbar({
                 centerChildrenVertically
                 gap="sm"
             >
-                {logo ? (
-                    <MenuNavLink className="ms-brand-navbar-logo" href={logo.href || '#/'}>
-                        <img src={logo?.src} style={{ width: 'auto', height: '2rem', objectFit: 'contain', ...logo.style }}/>
-                    </MenuNavLink>
-                ) : null}
+                {/* Contenedor del logo, separador, segundo logo y texto */}
+                <div style={{ display: 'flex', alignItems: 'center', gap: '10px', marginLeft: '50px' }}>
+                    {/* Tu logo personalizado */}
+                    <a href="/#" target="_self" rel="noopener noreferrer">
+                        <img
+                            src="../../product/assets/img/logo_udea.png"
+                            alt="My Logo"
+                            style={{
+                                weight: '80px',
+                                height: '80px', // Ajusta la altura de tu logo
+                                objectFit: 'contain'
+                            }}
+                        />
+                    </a>
+
+                    {/* Línea vertical negra */}
+                    <div
+                        style={{
+                            borderLeft: '1px solid black',
+                            height: '48px', // Altura igual a la del logo
+                            margin: '0 10px' // Espaciado alrededor del separador
+                        }}
+                    ></div>
+
+                    {/* Segundo logo */}
+                    <a href="/#" target="_self" rel="noopener noreferrer">
+                        <img
+                            src="../../product/assets/img/logo_udea_completo.png"
+                            alt="Second Logo"
+                            style={{
+                                weight: '80px',
+                                height: '80px', // Ajusta la altura del segundo logo
+                                objectFit: 'contain'
+                            }}
+                        />
+                    </a>
+                    {/* Texto después del segundo logo */}
+                    <a href="/#" target="_self" rel="noopener noreferrer" style={{ display: 'flex', alignItems: 'center' }}>
+                        <span
+                            style={{
+                                fontSize: '21px',
+                                color: '#434343',
+                                marginLeft: '10px',
+                                fontFamily: 'Montserrat, sans-serif',
+                                display: 'flex',
+                                alignItems: 'center', // Centra el texto verticalmente
+                                height: '80px' // Asegura que coincida con la altura de los logos
+                            }}
+                        >
+                            <h1 style={{ margin: 0 }}><Message msgId="BrandNavbar.description" /></h1>
+                        </span>
+                    </a>
+                </div>
                 <FlexBox.Fill
                     component={Menu}
                     centerChildrenVertically

@@ -185,7 +185,7 @@
     },
     "home": {
       "open": "Otvori",
-      "shortDescription": "<h1>Welcome to MapStore</h1><p>Modern webmapping with OpenLayers, Cesium, Leaflet and ReactJS.</p>",
+      "shortDescription": "<h1>Marinilla WebGIS</h1><p>Marinilla, fundada en 1690 y reconocida oficialmente como villa en 1787, se distingue por su legado indígena, su activa participación en la gesta independentista y su riqueza cultural, lo que le ha valido el reconocimiento como 'La Esparta Colombiana'.</p>",
       "forkMeOnGitHub": "Forkaj me na GitHub-u",
       "description": "MapStore je razvijen za jednostavno i intuitivno kreiranje, spremanje i dijeljenje karata i kombinacija podataka dobivenih odabirom sadržaja koji dolaze iz standardnih izvora kao što su Google Maps i OpenStreetMap ili putem servisa koje pružaju organizacije koristeći otvorene protokole kao što su OGC WMS, WFS, WMTS ili TMS itd.<br/>Posjetite <a href=\"https://mapstore.readthedocs.io/en/latest/\">početnu stranicu</a> za više informacija.",
       "Applications": "Aplikacije",
