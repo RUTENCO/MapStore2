@@ -1,4 +1,5 @@
 /* eslint-disable no-console */
+require('dotenv').config();
 const express = require('express');
 const nodemailer = require('nodemailer');
 const bodyParser = require('body-parser');
@@ -22,8 +23,8 @@ app.post('/send-email', (req, res) => {
     const { nombre, telefono, descripcion } = req.body;
 
     const mailOptions = {
-        from: 'd.r222403@gmail.com', // Cambia esto a tu correo
-        to: 'daniel.ramirez7@udea.edu.co', // Cambia esto a tu correo institucional
+        from: process.env.MAIL_FROM, // Cambia esto a tu correo
+        to: process.env.MAIL_TO, // Cambia esto a tu correo institucional
         subject: 'Nueva PQRS recibida',
         text: `Nombre: ${nombre}\nTeléfono: ${telefono}\nDescripción: ${descripcion}`
     };
@@ -40,7 +41,7 @@ app.post('/send-email', (req, res) => {
 });
 
 // Iniciar el servidor
-const PORT = 3001;
+const PORT = process.env.PORT;
 app.listen(PORT, () => {
     console.log(`Servidor escuchando en http://localhost:${PORT}`);
 });
