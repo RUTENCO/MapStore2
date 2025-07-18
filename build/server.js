@@ -12,8 +12,8 @@ app.use(cors());
 const transporter = nodemailer.createTransport({
     service: 'gmail', // Cambia esto si usas otro servicio como Outlook o SMTP personalizado
     auth: {
-        user: 'd.r222403@gmail.com', // Cambia esto a tu correo
-        pass: 'namn vjww kwya mpad' // Usa una contraseña de aplicación (no la contraseña normal)
+        user: process.env.MAIL_USER, // Cambia esto a tu correo
+        pass: process.env.MAIL_PASS // Usa una contraseña de aplicación (no la contraseña normal)
     }
 });
 
