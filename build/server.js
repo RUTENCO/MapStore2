@@ -1,8 +1,5 @@
 /* eslint-disable no-console */
 require('dotenv').config();
-console.log('► MAIL_USER=', process.env.MAIL_USER);
-console.log('► MAIL_PASS=', process.env.MAIL_PASS);
-
 const express = require('express');
 const nodemailer = require('nodemailer');
 const bodyParser = require('body-parser');
