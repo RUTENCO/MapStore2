@@ -56,7 +56,7 @@ RUN apt-get update \
 # 2.7) Copia y prepara tu servidor de notificaciones
 WORKDIR /mapstore
 COPY package*.json ./
-RUN npm ci --only=production
+RUN npm ci --only=production --legacy-peer-deps
 COPY build/server.js ./
 
 # 2.8) Define volúmenes y puertos
