@@ -179,8 +179,8 @@ function Footer({
                             telefono: formData.get('telefono'),
                             descripcion: formData.get('descripcion')
                         };
-
-                        fetch('http://localhost:3001/send-email', {
+                        const API_URL = process.env.REACT_APP_API_URL || 'http://localhost:3001';
+                        fetch(`${API_URL}/send-email`, {
                             method: 'POST',
                             headers: {
                                 'Content-Type': 'application/json'

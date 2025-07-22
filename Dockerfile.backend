@@ -1,0 +1,12 @@
+# Dockerfile.backend
+FROM node:18-slim
+
+WORKDIR /app
+
+# instala solo lo que necesitas en producción
+RUN npm install dotenv express nodemailer body-parser cors
+
+COPY build/server.js .
+
+EXPOSE 3001
+CMD ["node", "server.js"]
