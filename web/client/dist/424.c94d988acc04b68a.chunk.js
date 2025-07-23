@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkmapstore2=self.webpackChunkmapstore2||[]).push([[424],{850424:(e,r,s)=>{s.r(r),s.d(r,{default:()=>u});var a=s(3075),t=s(250797);class u extends t.A{decodeBlock(e){return(0,a.UD)(new Uint8Array(e)).buffer}}}}]);
