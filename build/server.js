@@ -1,53 +1,47 @@
 /* eslint-disable no-console */
 require('dotenv').config();
-const express    = require('express');
+const express = require('express');
 const nodemailer = require('nodemailer');
 const bodyParser = require('body-parser');
-const cors       = require('cors');
+const cors = require('cors');
 
 const app = express();
 app.use(bodyParser.json());
-
-// CORS configurado sólo para tu frontend
-app.use(cors({
-    origin: 'http://localhost:8080',
-    methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'],
-    allowedHeaders: ['Content-Type', 'Authorization'],
-    credentials: true
-}));
+app.use(cors());
 
 // Configuración del transporte de Nodemailer
 const transporter = nodemailer.createTransport({
-    service: 'gmail',
+    service: 'gmail', // Cambia esto si usas otro servicio como Outlook o SMTP personalizado
     auth: {
-        user: process.env.MAIL_USER,
-        pass: process.env.MAIL_PASS
+        user: process.env.MAIL_USER, // Cambia esto a tu correo
+        pass: process.env.MAIL_PASS // Usa una contraseña de aplicación (no la contraseña normal)
     }
 });
 
 // Ruta para manejar el envío de correos
 app.post('/send-email', (req, res) => {
     const { nombre, telefono, descripcion } = req.body;
+
     const mailOptions = {
-        from: process.env.MAIL_FROM,
-        to: process.env.MAIL_TO,
+        from: process.env.MAIL_FROM, // Cambia esto a tu correo
+        to: process.env.MAIL_TO, // Cambia esto a tu correo institucional
         subject: 'Nueva PQRS recibida',
         text: `Nombre: ${nombre}\nTeléfono: ${telefono}\nDescripción: ${descripcion}`
     };
 
-    // eslint-disable-next-line consistent-return
-    transporter.sendMail(mailOptions, (err, info) => {
-        if (err) {
-            console.error(err);
-            return res.status(500).send('Error al enviar el correo');
+    transporter.sendMail(mailOptions, (error, info) => {
+        if (error) {
+            console.error(error);
+            res.status(500).send('Error al enviar el correo');
+        } else {
+            console.log('Correo enviado: ' + info.response);
+            res.status(200).send('Correo enviado correctamente');
         }
-        console.log('Correo enviado:', info.response);
-        res.send('Correo enviado correctamente');
     });
 });
 
-// Inicia el servidor
-const PORT = process.env.PORT || 3001;
+// Iniciar el servidor
+const PORT = process.env.PORT;
 app.listen(PORT, () => {
     console.log(`Servidor escuchando en http://localhost:${PORT}`);
 });
