@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkmapstore2=self.webpackChunkmapstore2||[]).push([[6061],{206061:(e,t,r)=>{r.r(t),r.d(t,{default:()=>s});const s=class{readStyle(e){return new Promise(((t,r)=>{try{t(e)}catch(e){r(e)}}))}writeStyle(e){return new Promise(((t,r)=>{try{t(e)}catch(e){r(e)}}))}}}}]);

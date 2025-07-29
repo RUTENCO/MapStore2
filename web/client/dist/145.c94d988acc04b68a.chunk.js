@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkmapstore2=self.webpackChunkmapstore2||[]).push([[145],{320145:(e,r,t)=>{t.r(r),t.d(r,{default:()=>s});var a=t(145046);function s(e){for(var r,t,s=(0,a.$R)(e),u=0,n=1;n<s.length;)r=t||s[0],u+=((t=s[n])[0]-r[0])*(t[1]+r[1]),n++;return u>0}}}]);

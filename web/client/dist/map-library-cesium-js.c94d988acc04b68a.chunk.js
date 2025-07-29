@@ -1,1 +1,0 @@
-(self.webpackChunkmapstore2=self.webpackChunkmapstore2||[]).push([[7956,14],{158469:(e,t,r)=>{"use strict";r.r(t),r.d(t,{default:()=>s});const{createSink:a}=r(916589),s=()=>(r(508382),{Map:r(793875).A,Layer:r(214170).A,Feature:a((()=>{}))})},950014:(e,t,r)=>{var a=r(315389),s=r(855765);e.exports=function(e,t){return e&&e.length?s(e,a(t,2)):[]}}}]);

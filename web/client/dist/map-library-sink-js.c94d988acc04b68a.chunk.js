@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkmapstore2=self.webpackChunkmapstore2||[]).push([[309],{655136:(e,a,s)=>{s.r(a),s.d(a,{default:()=>r});const{createSink:t}=s(916589),r=()=>({Map:t((()=>{})),Layer:t((()=>{})),Feature:t((()=>{}))})}}]);
